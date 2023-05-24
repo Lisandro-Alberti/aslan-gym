@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ffff00;
+    font-weight: bold;
+    transition: .5s;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/*EDICION-FOOTER*/
+
+footer div img {
+    height: 30px;
+    width: 30px;
+}
+footer {
+    background-color: #ffff00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+footer div ul li {
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+footer div ul{
+    margin: 0;
+}
+
+
+/*/////////////////////////////////CUERPO-PAG1////////////////////////////////////*/
+
+.fondo-inicio {
+    background-image: url(../assets/img/fondo-inicio.jfif)
+}
+body main .titulo h1 {
+    color: #ffffff;
+    font-size: 90px;
+    display: inline-block;
+}
+.titulo .equipo-color {
+    color: #ffff00;
+}
+body main .sub-titulo h2 {
+    color: #000000;
+    font-size: 45px;
+    display: inline-block;
+    border: 5px solid #ffff00;
+    background-color: #ffff00;
+}
+.flex-pag1{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*//////////////////////////////////////////CUERPO-PAG2/////////////////////////////////////////////*/
+
+.fondo-nosotros {
+    background-color: #000000e0;
+}
+
+
+/*////////////////////////////////CUERPO-PAG3/////////////////////////////////GRILLAS//////////////////////////*/
+
+.fondo-actividades {
+    background-color: #808080;
+}
+
+.contenedor-grillas {
+    margin: 0 auto;
+    height: 80vh;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 200px 200px 200px;
+    column-gap: 5px;
+    row-gap: 30px;
+    grid-template-areas:
+        "act-h1 act-h1 act-h1"
+        "img1 img2 img3"
+        "img4 img5 img6"
+        "img7 img8 img9"
+    ;
+}
+
+.act-h1 {
+    grid-area: act-h1;
+    margin: 0 auto;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.act-fondo img {
+    width: 400px;
+    height: 210px;
+}
+
+.contenedor-grillas .act-h1 {
+    font-size: 70px;
+    color: #ffff00;
+}
+
+.contenedor-grillas .nuestras-titulo {
+    color: #ffffff;
+}
+
+.card {
+    width: 400px;
+    height: 210px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+}
+
+.card img,
+.card figcaption {
+    grid-area: stack;
+}
+
+.card figcaption {
+    background-color: #242424e0;
+    transform: translateY(calc(100% - 40px));
+    transition: transform 0.6s;
+    color: #f0ffff;
+    text-align: center;
+}
+
+.card figcaption h3 {
+    height: 40px;
+    font-size: 30px;
+}
+
+.card figcaption p {
+    font-size: 19px;
+    color: #ffff00;
+}
+
+.card:hover figcaption {
+    transform: none;
+}
+
+
+
+
+
+/*///////////////////////////////////////////////CUERPO-PAG4////////////////////////////////////*/
+
+
+.horar {
+    background-color: #808080;
+    height: 90vh;
+}
+
+.horar h1{
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    padding: 20px 0;
+    color: #ffff00
+}
+.navbar-brand img{
+    height: 70px;
+    width: 70px;
+}
+.nav-item a{
+    font-size: 22px;
+    color: #ffffff;
+}
+.navbar-brand p{
+    display: inline;
+    font-size: 25px;
+    color: #ffff00;
+}
+
+/*//////////////////////////////////////CUERPO-PAG5///////////////////////////////////////////*/
+
+
+.form {
+    background-image: url(../assets/img/Captura\ web_26-4-2023_0352_www.instagram.com.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+
+@media (max-width: 740px) {
+    footer div ul li{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 465px) {
+    footer div ul li , p{
+        font-size: 12px;
+        margin-left: 0;
+    }
+}
+@media (max-width: 992px){
+    .carousel-media{
+        display: block;
+    }
+}
